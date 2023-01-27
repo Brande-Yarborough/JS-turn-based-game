@@ -18,6 +18,7 @@
 const player = {
   name: "Thy hero!",
   type: "Knight",
+  img: "./assets/find-some-img-and-update-this-property",
   hp: 99,
   moves: {
     off: {
@@ -34,6 +35,7 @@ const monsters = {
   goblin: {
     name: "Goblin",
     type: "Monster",
+    img: "./assets/find-some-img-and-update-this-property",
     hp: 10,
     moves: {
       off: {
@@ -48,6 +50,7 @@ const monsters = {
   moblin: {
     name: "Moblin",
     type: "Monster",
+    img: "./assets/find-some-img-and-update-this-property",
     hp: 15,
     moves: {
       off: {
@@ -62,6 +65,7 @@ const monsters = {
   trex: {
     name: "Trex",
     type: "Monster",
+    img: "./assets/find-some-img-and-update-this-property",
     hp: 999,
     moves: {
       off: {
