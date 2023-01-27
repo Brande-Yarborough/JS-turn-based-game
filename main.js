@@ -14,8 +14,9 @@
 //         }
 //     }
 // }
+import { Character } from "./character";
 
-const player = {
+const player = new {
   name: "Thy hero!",
   type: "Knight",
   img: "./assets/find-some-img-and-update-this-property",
@@ -29,7 +30,7 @@ const player = {
       heal: 10,
     },
   },
-};
+}();
 
 const monsters = {
   goblin: {
