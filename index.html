@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato|Oswald|Playfair+Display">
     <title>JS Turn Based Game</title>
     <link
       rel="stylesheet"
@@ -43,12 +44,17 @@
 
       <div class="row game-display">
         <div class="col-md-4">
-       <div class="card player" style="width: 18rem;">
+       <div class="card player" style="width: 1fr;">
           <img class="card-img-top" src="..." alt="Card image cap">
            <div class="card-body">
            <h5 class="card-title">Card title</h5>
            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
+           
+           <div class="player-moves">
+           <a href="#" class="move-button">Move 1</a>
+            <a href="#" class="move-button">Move 2</a>
+            <a href="#" class="move-button">Move 3</a>
+          </div>
          </div>
         </div>
 </div>
@@ -60,6 +66,7 @@
         <h5 class="card-title">Card title</h5>
         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
         <a href="#" class="btn btn-primary">Go somewhere</a>
+        
       </div>
     </div>
 </div>
@@ -68,12 +75,16 @@
 
 
 <div class="col-md-4">
-  <div class="card enemy" style="width: 18rem;">
+  <div class="card enemy" style="width: 1fr;">
     <img class="card-img-top" src="..." alt="Card image cap">
     <div class="card-body">
       <h5 class="card-title">Card title</h5>
       <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-      <a href="#" class="btn btn-primary">Go somewhere</a>
+      <div class="player-moves">
+        <a href="#" class="move-button">Move 1</a>
+         <a href="#" class="move-button">Move 2</a>
+         <a href="#" class="move-button">Move 3</a>
+       </div>
     </div>
   </div>
 </div>

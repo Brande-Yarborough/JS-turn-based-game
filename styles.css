@@ -11,6 +11,14 @@
 
 body {
     background-color: #CACACA;
+    font-family: "Lato", "Oswald", "Playfair+Display";
+}
+
+.move-button {
+    background-color: #CACACA;
+    width: 100%;
+    display: inline-block;
+    text-transform: uppercase;
 }
 
 .game-container {
