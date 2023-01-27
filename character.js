@@ -1,7 +1,7 @@
 export class Move {
-  constructor({ name, action, effect } = {}) {
+  constructor({ name, dmg, effect } = {}) {
     this.name = name;
-    this.action = action;
+    this.dmg = dmg;
     this.effect = effect;
   }
 }

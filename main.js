@@ -3,6 +3,7 @@
 // const char = {
 //     this.name =  name,
 //     this.hp = hp,
+//      this.img = img,
 //     this.moves = moves {
 //         off = {
 //             //offensive moves

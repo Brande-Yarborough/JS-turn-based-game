@@ -17,8 +17,10 @@ class Battle {
       //Check if enemy is still alive
       //end game
       console.log("\nGame over!\n");
+      return;
     }
     //Enemy's turn
+    // set timeout for delay
     let enemyMove = this.enemy.pickMove();
     if (enemyMove.effect === "off") {
       //Attack
@@ -31,6 +33,7 @@ class Battle {
       //Check if enemy is still alive
       //end game
       console.log("\nGame over!\n");
+      return;
     }
   }
 }
