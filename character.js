@@ -1,6 +1,3 @@
-const playerMoves = [move1, move2, move3];
-const monsterMoves = [move1, move2, move3];
-
 export class Move {
   constructor({ name, action, effect } = {}) {
     this.name = name;
@@ -19,3 +16,6 @@ export class Character {
     this.move = new Move();
   }
 }
+
+const playerMoves = [];
+const monsterMoves = [];

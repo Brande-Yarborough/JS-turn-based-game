@@ -16,7 +16,7 @@
 // }
 import { Character } from "./character";
 
-const player = new {
+const player = {
   name: "Thy hero!",
   type: "Knight",
   img: "./assets/find-some-img-and-update-this-property",
@@ -30,31 +30,25 @@ const player = new {
       heal: 10,
     },
   },
-}();
+};
 
 const monsters = {
-    goblin: {
-      name: "Goblin",
-      type: "Monster",
-      img: "./assets/find-some-img-and-update-this-property",
-      hp: 10,
-      moves: {
-        off: {
-          strike: 10,
-          pummel: 15,
-        },
-        def: {
-          heal: 10,
-        },
+  goblin: {
+    name: "Goblin",
+    type: "Monster",
+    img: "./assets/find-some-img-and-update-this-property",
+    hp: 10,
+    moves: {
+      off: {
+        strike: 10,
+        pummel: 15,
       },
-      /* pickMove() {
-        rnd = Math.floor(Math.random() * moves.length);
-
-
-    */
+      def: {
+        heal: 10,
+      },
     },
   },
-  moblin = {
+  moblin: {
     name: "Moblin",
     type: "Monster",
     img: "./assets/find-some-img-and-update-this-property",
@@ -69,7 +63,7 @@ const monsters = {
       },
     },
   },
-  trex = {
+  trex: {
     name: "Trex",
     type: "Monster",
     img: "./assets/find-some-img-and-update-this-property",
@@ -84,4 +78,5 @@ const monsters = {
         heal: 10,
       },
     },
-  };
+  },
+};
