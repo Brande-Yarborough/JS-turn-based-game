@@ -33,22 +33,28 @@ const player = new {
 }();
 
 const monsters = {
-  goblin: {
-    name: "Goblin",
-    type: "Monster",
-    img: "./assets/find-some-img-and-update-this-property",
-    hp: 10,
-    moves: {
-      off: {
-        strike: 10,
-        pummel: 15,
+    goblin: {
+      name: "Goblin",
+      type: "Monster",
+      img: "./assets/find-some-img-and-update-this-property",
+      hp: 10,
+      moves: {
+        off: {
+          strike: 10,
+          pummel: 15,
+        },
+        def: {
+          heal: 10,
+        },
       },
-      def: {
-        heal: 10,
-      },
+      /* pickMove() {
+        rnd = Math.floor(Math.random() * moves.length);
+
+
+    */
     },
   },
-  moblin: {
+  moblin = {
     name: "Moblin",
     type: "Monster",
     img: "./assets/find-some-img-and-update-this-property",
@@ -63,7 +69,7 @@ const monsters = {
       },
     },
   },
-  trex: {
+  trex = {
     name: "Trex",
     type: "Monster",
     img: "./assets/find-some-img-and-update-this-property",
@@ -78,5 +84,4 @@ const monsters = {
         heal: 10,
       },
     },
-  },
-};
+  };
