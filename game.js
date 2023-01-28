@@ -8,14 +8,15 @@ export class Game {
     this.monster = new Character({
       name: "Monster",
     });
+    // This battle
   }
 }
 
 class Warrior extends Character {
   constructor(type) {
     super(type);
-    type = "T-Rex";
-    hp;
+    type = "Warrior";
+    hp: 100;
     fullHp = 100;
 
     // "Dream" Stat
@@ -26,7 +27,8 @@ class Warrior extends Character {
 class Rogue extends Character {
   constructor(type) {
     super(type);
-    type = "Raptor";
+    type = "Rogue";
+    hp = 70;
     fullHp = 70;
   }
 }
@@ -34,7 +36,8 @@ class Rogue extends Character {
 class Mage extends Character {
   constructor(type) {
     super(type);
-    type = "T-Rex";
+    type = "Mage";
+    hp = 60;
     fullHp = 60;
   }
 }
@@ -44,3 +47,4 @@ selectPlayer.addEventListener("click", function (event) {
   const result = document.querySelector(".result");
   console.log(event.target.value);
 });
+// const warrior1 = new Warrior(type)
