@@ -1,8 +1,8 @@
 export class Move {
-  constructor({ name, dmg, effect } = {}) {
+  constructor({ name, dmg, heal, effect } = {}) {
     this.name = name;
     this.dmg = dmg;
-    this.effect = effect;
+    this.heal = heal;
   }
 }
 
@@ -12,6 +12,6 @@ export class Character {
     this.img = img;
     this.hp = hp;
     this.fullHp = fullHp;
-    this.moves = [];
+    this.moves = moves;
   }
 }
