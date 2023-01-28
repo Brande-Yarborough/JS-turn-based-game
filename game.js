@@ -40,7 +40,7 @@ class Mage extends Character {
 }
 
 const selectPlayer = document.querySelector(".dropdown-menu");
-selectPlayer.addEventListener("change", function (event) {
+selectPlayer.addEventListener("click", function (event) {
   const result = document.querySelector(".result");
-  console.log(selectPlayer);
+  console.log(event.target.value);
 });

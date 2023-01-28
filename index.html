@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato|Oswald|Playfair+Display">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
     <title>JS Turn Based Game</title>
     <link
       rel="stylesheet"
@@ -26,11 +29,11 @@
           Character Select
         </button>
         <!-- character select options: we can change these value names based on JS -->
-        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-          <a class="dropdown-item">Hero 1</a>
-          <a class="dropdown-item">Hero 2</a>
-          <a class="dropdown-item">Hero 3</a>
-        </div>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+         <li><a class="dropdown-item" value="hero-1">Hero 1</a></li>
+          <li><a class="dropdown-item" value="hero-2">Hero 2</a></li>
+          <li><a class="dropdown-item" value="hero-3">Hero 3</a></li>
+        </ul>
       </div>
       <div class="result"></div>
       <h1>Dinosaur Battle</h1>
@@ -47,7 +50,7 @@
       <div class="row game-display">
         <div class="col-md-4">
        <div class="card player" style="width: 1fr;">
-          <img class="card-img-top" src="..." alt="Card image cap">
+          <!-- <img class="card-img-top" src="..." alt="Card image cap"> -->
            <div class="card-body">
            <h5 class="card-title">Card title</h5>
            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -81,7 +84,7 @@
 
 <div class="col-md-4">
   <div class="card enemy" style="width: 1fr;">
-    <img class="card-img-top" src="..." alt="Card image cap">
+    <!-- <img class="card-img-top" src="..." alt="Card image cap"> -->
     <div class="card-body">
       <h5 class="card-title">Card title</h5>
       <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>

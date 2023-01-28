@@ -21,6 +21,14 @@ header {
   padding-top: 15px;
 }
 
+.start-btn {
+  padding: 15px;
+}
+
+h1 {
+  font-family: "Press Start 2P", cursive;
+}
+
 footer {
   margin-top: auto;
   width: 100%;
