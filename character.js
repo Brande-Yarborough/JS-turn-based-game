@@ -1,5 +1,5 @@
 export class Move {
-  constructor({ name, dmg, heal, effect } = {}) {
+  constructor({ name, dmg, heal } = {}) {
     this.name = name;
     this.dmg = dmg;
     this.heal = heal;

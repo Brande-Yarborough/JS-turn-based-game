@@ -12,6 +12,7 @@ export class Game {
 
 // PLAYER CHARACTER CHOICES
 // Warrior, Rogue, and Mage are all roles the player character can take on.
+// Player's button selection decided which type of player gets made.
 export class Warrior extends Character {
   constructor() {
     super({
