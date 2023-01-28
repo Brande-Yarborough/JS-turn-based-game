@@ -16,10 +16,7 @@
   max-width: 20%;
 }
 
-header {
-  display: flex;
-  justify-content: space-around;
-}
+
 
 .dropdown {
   padding-top: 15px;
@@ -32,13 +29,14 @@ header {
     background-color: rgb(215, 215, 255);
     text-align: center;
     width: 100%;
+}
 
 h1 {
-  font-family: "Press Start 2P", cursive;
+  font-family: "Press Start 2P" cursive;
 }
 
    
-}
+
 
 footer {
   margin-top: auto;
