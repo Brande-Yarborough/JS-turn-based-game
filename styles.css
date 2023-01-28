@@ -12,6 +12,15 @@
   max-width: 20%;
 }
 
+header {
+  display: flex;
+  justify-content: space-around;
+}
+
+.dropdown {
+  padding-top: 15px;
+}
+
 footer {
   margin-top: auto;
   width: 100%;

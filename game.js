@@ -38,3 +38,9 @@ class Mage extends Character {
     fullHp = 60;
   }
 }
+
+const selectPlayer = document.querySelector(".dropdown-menu");
+selectPlayer.addEventListener("change", function (event) {
+  const result = document.querySelector(".result");
+  console.log(selectPlayer);
+});
