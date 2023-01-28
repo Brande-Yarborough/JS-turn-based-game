@@ -7,15 +7,11 @@ export class Move {
 }
 
 export class Character {
-  constructor({ name, type, move, img, hp, fullHp } = {}) {
+  constructor({ name, moves, img, hp, fullHp } = {}) {
     this.name = name;
-    this.type = type;
     this.img = img;
     this.hp = hp;
     this.fullHp = fullHp;
-    this.move = new Move();
+    this.moves = [];
   }
 }
-
-const playerMoves = [];
-const monsterMoves = [];

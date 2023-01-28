@@ -12,33 +12,49 @@ export class Game {
   }
 }
 
+// Warrior, Rogue, and Mage are all roles the player character can take on.
 class Warrior extends Character {
-  constructor(type) {
-    super(type);
-    type = "Warrior";
+  constructor(role) {
+    super(img, hp, fullHp, moves);
+    role = "Warrior";
+    img = "imggobrr";
     hp: 100;
     fullHp = 100;
-
-    // "Dream" Stat
-    // this.hasBulk = true;
+    moves = [];
+    // "Dream" Stat: this.hasBulk = true;
   }
 }
 
 class Rogue extends Character {
-  constructor(type) {
-    super(type);
-    type = "Rogue";
+  constructor(role) {
+    super(img, hp, fullHp, moves);
+    role = "Rogue";
+    img = "imggobrr";
     hp = 70;
     fullHp = 70;
+    moves = [];
   }
 }
 
 class Mage extends Character {
-  constructor(type) {
-    super(type);
-    type = "Mage";
+  constructor(role) {
+    super(img, hp, fullHp, moves);
+    role = "Mage";
+    img = "imggobrr";
     hp = 60;
     fullHp = 60;
+    moves = [];
+  }
+}
+
+// Monster is a character that computer takes control of.
+class Monster extends Character {
+  constructor() {
+    super(img, hp, fullHp, moves);
+    img = "imggobrr";
+    hp = 60;
+    fullHp = 60;
+    moves = [];
   }
 }
 
