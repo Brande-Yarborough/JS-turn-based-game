@@ -61,6 +61,7 @@ class Monster extends Character {
 const selectPlayer = document.querySelector(".dropdown-menu");
 selectPlayer.addEventListener("click", function (event) {
   const result = document.querySelector(".result");
-  console.log(event.target.value);
+  const value = event.target.getAttribute("value");
+  console.log(value);
 });
 // const warrior1 = new Warrior(type)
