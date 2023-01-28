@@ -6,17 +6,12 @@
   background-color: transparent;
   display: flex;
   flex-wrap: wrap;
-    background-color: transparent;
- 
-  
+  background-color: transparent;
 }
 
 .mid-body img {
-    
   max-width: 20%;
 }
-
-
 
 .dropdown {
   padding-top: 15px;
@@ -26,17 +21,14 @@
   padding: 15px;
 }
 .header-container {
-    background-color: rgb(215, 215, 255);
-    text-align: center;
-    width: 100%;
+  background-color: rgb(215, 215, 255);
+  text-align: center;
+  width: 100%;
 }
 
 h1 {
-  font-family: "Press Start 2P" cursive;
+  font-family: "Press Start 2P", cursive;
 }
-
-   
-
 
 footer {
   margin-top: auto;
@@ -44,7 +36,6 @@ footer {
   text-decoration: none;
   background-color: rgb(0, 27, 108);
   text-align: center;
-
 }
 
 footer a {
