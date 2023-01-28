@@ -7,11 +7,10 @@ export class Move {
 }
 
 export class Character {
-  constructor({ name, moves, img, hp, fullHp } = {}) {
-    this.name = name;
+  constructor({ type, img, hp, fullHp } = {}) {
+    this.type = type;
     this.img = img;
     this.hp = hp;
     this.fullHp = fullHp;
-    this.moves = moves;
   }
 }
