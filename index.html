@@ -6,13 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato|Oswald|Playfair+Display">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
-   
-
-<title>JS Turn Based Game</title>
-   
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <title>JS Turn Based Game</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+    />
     <link rel="stylesheet" href="styles.css" />
   </head>
 
@@ -27,7 +27,6 @@
     />
     <header class="container game-options">
      
-      
       <div class="row header">
         <div class="col-md header-container">
 
@@ -45,7 +44,6 @@
 
 
               Character Select
-
             </button>
             <!-- character select options: we can change these value names based on JS -->
             <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
@@ -60,65 +58,53 @@
       </div>
     </header>
 
-   
-    </div>
-   
-
     <div class="container game-container">
-
-
       <div class="row game-display">
         <div class="col-md-4">
-         <div class="card player cardbody" style="width: 1fr;">
+       <div class="card player cardbody" style="width: 1fr;">
           <!-- <img class="card-img-top" src="..." alt="Card image cap"> -->
            <div class="card-body">
          <!--  <h5 class="card-title">Card title</h5> -->
            <p class="card-text"><img class="player1-img-holder" src="assets/Screen Shot 2023-01-28 at 3.53.37 PM.png"></p>
+           
            <div class="player-moves">
            <a href="#" class="move-button">Move 1</a>
             <a href="#" class="move-button">Move 2</a>
             <a href="#" class="move-button">Move 3</a>
           </div>
         </div>
-</div>
 
-<div class="col-md-4">
-    <div class="card mid cardbody" style="width: 1fr;">
-      <img class="card-img-top">
-      <div class="mid-body">
-        <div class="health-player">Player: 
-          <img class="player-health-img" src="assets/8bitheart copy.png">
-          <div class="player-health" id="player-health" value="100">100</div>
+        <div class="col-md-4">
+            <div class="card mid cardbody" style="width: 1fr;">
+              <img class="card-img-top">
+              <div class="mid-body">
+                <div class="health-player">Player: 100
+                <img src="assets/vecteezy_heart-pixel-art-vector-isolated_11373405.jpg">
+                </div>
+                <div class="health-enemy">Dinosaur:100
+                  <img src="assets/vecteezy_heart-pixel-art-vector-isolated_11373405.jpg">
+                  </div>
+                
+              </div>
+            </div>
         </div>
-        <div class="health-enemy">Enemy:
-          <img class="enemy-health-image" src="assets/8bitheart copy.png">
-          <div class="enemy-health" id="enemy-health" value="100">100</div>
+
+        <div class="col-md-4">
+          <div class="card enemy cardbody" style="width: 1fr;">
+            <!-- <img class="card-img-top" src="..." alt="Card image cap"> -->
+            <div class="card-body">
+            <!-- <h5 class="card-title">Card title</h5> -->
+              <p class="card-text"><img class="player1-img-holder" src="assets/evilegg.png"></p>
+              <div class="player-moves">
+                <a href="#" class="move-button">Move 1</a>
+                <a href="#" class="move-button">Move 2</a>
+                <a href="#" class="move-button">Move 3</a>
+              </div>
+            </div>
           </div>
-        
+        </div>
       </div>
     </div>
-</div>
-
-
-
-
-<div class="col-md-4">
-  <div class="card enemy cardbody" style="width: 1fr;">
-    <!-- <img class="card-img-top" src="..." alt="Card image cap"> -->
-    <div class="card-body">
-     <!-- <h5 class="card-title">Card title</h5> -->
-      <p class="card-text"><img class="player1-img-holder" src="assets/evilegg.png"></p>
-      <div class="player-moves">
-        <a href="#" class="move-button">Move 1</a>
-         <a href="#" class="move-button">Move 2</a>
-         <a href="#" class="move-button">Move 3</a>
-       </div>
-    </div>
-  </div>
-</div>
-</div>
-
-  </div>
   
 
 

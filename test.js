@@ -19,6 +19,7 @@ const testPlayer = new Warrior();
 const testEnemy = new Moblin();
 
 //  JC: Player selecting an attack will run this turn function.
+//JT - this can be put into and Event Listener callback function
 const testTurn = () => {
   //Player's turn
 
