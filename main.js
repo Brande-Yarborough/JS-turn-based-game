@@ -1,5 +1,5 @@
-import { Battle } from "./battle";
-import { Character } from "./character";
+import { Battle } from "./battle.js";
+import { Character } from "./character.js";
 const selectPlayer = document.querySelector(".dropdown-menu");
 selectPlayer.addEventListener("click", function (event) {
   const result = document.querySelector(".result");

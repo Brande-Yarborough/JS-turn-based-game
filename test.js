@@ -27,8 +27,8 @@ const testTurn = () => {
     JC: Enemy's HP will be subtracted and reassigned by the Player's move's damage.
     If the player's move has a heal property, their HP will increase by that amount.
   */
-  testEnemy.hp -= testPlayer.moves[3].dmg;
-  testPlayer.hp += testPlayer.moves[3].heal;
+  testEnemy.hp -= testPlayer.moves[2].dmg;
+  testPlayer.hp += testPlayer.moves[2].heal;
 
   //JC: console.log's included to make sure moves are affecting HP appropriately.
   document.getElementById(
@@ -50,13 +50,11 @@ const testTurn = () => {
     return;
   }
 
-  //Enemy's turn
-  // JC: Will theoretically randomize enemy's attack array. Mutates array order each time function is run.
-  for (let i = testEnemy.moves.length - 1; i > 0; i--) {
-    let j = Math.floor(Math.random() * i);
-    let randomMoves = testEnemy.moves[i];
-    testEnemy.moves[i] = testEnemy.moves[j];
-    testEnemy.moves[j] = randomMoves;
+  //Enemy picks move
+  function enemyMove() {
+    let rnd = Math.floor(Math.random() * testEnemy.moves.length);
+    let rndMove = testEnemy.moves[rnd];
+    console.log(rnd, rndMove);
   }
 
   // JC: console.log's included to make sure moves are affecting HP appropriately and that enemy's attacks are random.
