@@ -32,7 +32,7 @@ export class Warrior extends Character {
   }
 }
 
-class Rogue extends Character {
+export class Rogue extends Character {
   constructor() {
     super({
       type: "Player",
@@ -52,7 +52,7 @@ class Rogue extends Character {
   }
 }
 
-class Mage extends Character {
+export class Mage extends Character {
   constructor() {
     super({
       type: "Player",
@@ -73,7 +73,7 @@ class Mage extends Character {
 
 // Monsters Generated
 // Monster is a character that computer takes control of.
-class Moblin extends Character {
+export class Moblin extends Character {
   constructor() {
     super({
       type: "Monster",
