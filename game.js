@@ -36,18 +36,19 @@ class Rogue extends Character {
   constructor() {
     super({
       type: "Player",
+      //
       img: "rogue.jpg",
       hp: 70,
       fullHp: 70,
     });
 
-    this.role = "Warrior";
+    this.role = "Rogue";
     this.moves = [
-      new Move({ name: "Stomp", dmg: 10, heal: 0 }),
-      new Move({ name: "Crunch", dmg: 15, heal: 0 }),
-      new Move({ name: "Charge", dmg: 30, heal: 0 }),
+      new Move({ name: "Slice", dmg: 12, heal: 0 }),
+      new Move({ name: "pounce", dmg: 25, heal: 0 }),
+      new Move({ name: "Rend", dmg: 15, heal: 5 }),
     ];
-    // "Dream" Stat: this.hasBulk = true;
+    // "Dream" Passive: causes bleeding;
   }
 }
 
@@ -62,11 +63,11 @@ class Mage extends Character {
 
     this.role = "Warrior";
     this.moves = [
-      new Move({ name: "Blast", dmg: 20, heal: 0 }),
-      new Move({ name: "Lightning", dmg: 45, heal: 0 }),
-      new Move({ name: "Heal", dmg: 0, heal: 30 }),
+      new Move({ name: "Swoop", dmg: 20, heal: 0 }),
+      new Move({ name: "Asteroid", dmg: 45, heal: 0 }),
+      new Move({ name: "Nest", dmg: 0, heal: 25 }),
     ];
-    // "Dream" Stat: this.hasBulk = true;
+    // "Dream" Component: magic shield;
   }
 }
 
