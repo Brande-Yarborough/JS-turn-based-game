@@ -45,6 +45,10 @@ const testTurn = () => {
     "health-player"
   ).innerHTML = `Players's HP: ${testPlayer.hp}/${testPlayer.fullHp}`;
 
+  document.getElementById(
+    "player-info"
+  ).innerHTML = `${testPlayer.moves[0].name} - DMG:${testPlayer.moves[0].dmg} / Heal:${testPlayer.moves[0].heal}`;
+
   if (testEnemy.hp < 1) {
     //Check if enemy is still alive
     //end game
