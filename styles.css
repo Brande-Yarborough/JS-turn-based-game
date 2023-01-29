@@ -76,7 +76,7 @@ h2 {
 }
 
 .game-header {
-  font-family: "Press Start 2P" cursive;
+  font-family: "Press Start 2P", cursive;
   text-transform: uppercase;
 }
 
