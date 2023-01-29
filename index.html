@@ -4,34 +4,29 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato|Oswald|Playfair+Display">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
-    <title>JS Turn Based Game</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Lato|Oswald|Playfair+Display"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+    <title>Dinosaur Battle</title>
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
     />
     <link rel="stylesheet" href="styles.css" />
   </head>
-
-
   <body>
     <!-- JC: Start-up sounds added, need to figure out if it can be looped if embedded -->
-    <embed
-      class="startup-ambience"
-      src="./assets/EAF_Tikal_Temple_Sunset_Frogs&Birds.wav"
-      loop="true"
-      autostart="true"
-    />
+    <embed class="startup-ambience" src="./assets/EAF_Tikal_Temple_Sunset_Frogs&Birds.wav" loop="true" autostart="true">
     <header class="container game-options">
       <div class="row header">
         <div class="col-md header-container">
-
-          <h1 class="game-header">Jurassic Rumble</h1>
-
-          <h2>choose your champion!!</h2>
           <div class="dropdown">
             <button
               class="btn btn-secondary dropdown-toggle"
@@ -39,19 +34,18 @@
               id="dropdownMenuButton"
               data-toggle="dropdown"
               aria-haspopup="true"
-              aria-expanded="false">
-
-
+              aria-expanded="false"
+            >
               Character Select
             </button>
             <!-- character select options: we can change these value names based on JS -->
             <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-              <li><a class="dropdown-item" value="hero-1">Hero 1</a></li>
-              <li><a class="dropdown-item" value="hero-2">Hero 2</a></li>
-              <li><a class="dropdown-item" value="hero-3">Hero 3</a></li>
+              <li><a class="dropdown-item" value="hero-1">Warrior</a></li>
+              <li><a class="dropdown-item" value="hero-2">Rogue</a></li>
+              <li><a class="dropdown-item" value="hero-3">Mage</a></li>
             </ul>
           </div>
-
+          <h1>Dinosaur Battle</h1>
           <button class="start-btn">Start Game!</button>
         </div>
       </div>
@@ -72,7 +66,11 @@
               </div>
             </div>
           </div>
+         </div>
         </div>
+      </div>
+
+
 
         <div id="hp-card" class="col-md-4">
             <div class="card mid cardbody" style="width: 1fr;">
@@ -88,7 +86,13 @@
                 </div>
               </div>
             </div>
-        </div>
+          </div>
+        
+      </div>
+  
+
+
+
 
         <div id="monster-card" class="col-md-4">
           <div class="card enemy cardbody" style="width: 1fr;">
@@ -103,25 +107,27 @@
               </div>
             </div>
           </div>
-        </div>
       </div>
     </div>
-  
+
+
+
+
+    <div class="card text-box">
+      <div class="card-body" id="window-text">
+        You, a bold and brash adventurer, have stumbled upon a malevolent wizard. The cunning, cabalistic caitiff has transmuted you into a mysterious egg!<br>
+        Will you be able to survive your struggle to victory - unsealing this spell of malfeasance? Or will you fall to the challenges ahead? Choose your role and see!
+      </div>
+    </div>
+  </div>
 
 
   <footer><a href="https://www.vecteezy.com/v">Images provided by Vecteezy</a></footer>
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-
-
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.7/handlebars.min.js"
-      integrity="sha512-RNLkV3d+aLtfcpEyFG8jRbnWHxUqVZozacROI4J2F1sTaDqo1dPQYs01OMi1t1w9Y2FdbSCDSQ2ZVdAC8bzgAg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
-    <script src="game.js" type="module"></script>
-    <script src="./test.js" type="module"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.7/handlebars.min.js" integrity="sha512-RNLkV3d+aLtfcpEyFG8jRbnWHxUqVZozacROI4J2F1sTaDqo1dPQYs01OMi1t1w9Y2FdbSCDSQ2ZVdAC8bzgAg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="game.js" type="module"></script>
+  <script src="./test.js" type="module"></script>
   </body>
 </html>
