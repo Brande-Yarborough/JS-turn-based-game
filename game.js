@@ -77,7 +77,7 @@ export class Moblin extends Character {
   constructor() {
     super({
       type: "Monster",
-      img: "mobiln.jpg",
+      img: "moblin.jpg",
       hp: 40,
       fullHp: 40,
     });
@@ -91,11 +91,11 @@ export class Moblin extends Character {
   }
 }
 
-class Dragonzilla extends Character {
+class Mecharex extends Character {
   constructor() {
     super({
       type: "Monster",
-      img: "dragonknight.jpg",
+      img: "mecharex.jpg",
       hp: 100,
       fullHp: 100,
     });
@@ -109,11 +109,11 @@ class Dragonzilla extends Character {
   }
 }
 
-class Demogorgon extends Character {
+class Sabertooth extends Character {
   constructor() {
     super({
       type: "Monster",
-      img: "demogorgon.jpg",
+      img: "sabertooth.jpg",
       hp: 60,
       fullHp: 60,
     });
