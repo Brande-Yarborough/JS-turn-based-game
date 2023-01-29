@@ -8,17 +8,6 @@ import { Warrior, Rogue, Mage, Moblin } from "./game.js";
 
 // turn(testPlayer, testEnemy);
 
-// selectPlayer.addEventListener("click", function (event) {
-//   const result = document.querySelector(".result");
-//   const namePrompt = prompt("Enter your name");
-//   const value = event.target.getAttribute("value");
-//   console.log(value);
-//   const name = document.querySelector(".name");
-//   name.innerHTML = `${namePrompt}`;
-//   result.innerHTML = `${value}`;
-//   console.log(name);
-// });
-
 //  JC: A basic test to check Battle Logic
 /*
     JC: Theoretically, the player will be set as whatever role they click on.
@@ -41,7 +30,9 @@ const testTurn = () => {
   testPlayer.hp += testPlayer.moves[0].heal;
 
   //JC: console.log's included to make sure moves are affecting HP appropriately.
-  console.log(`Player Used ${testPlayer.moves[0].name}`);
+  document.getElementById(
+    "window-text"
+  ).innerHTML = `Player Used ${testPlayer.moves[0].name}`;
   console.log(`Enemy's HP: ${testEnemy.hp}`);
   if (testEnemy.hp < 1) {
     //Check if enemy is still alive
@@ -64,7 +55,9 @@ const testTurn = () => {
   testPlayer.hp -= testEnemy.moves[0].dmg;
   testEnemy.hp += testEnemy.moves[0].heal;
   console.log(`Enemy Used ${testEnemy.moves[0].name}`);
-  console.log(`Player's HP: ${testPlayer.hp}`);
+
+  // JC: Updates Player's HP Value, but also takes away heart
+  // document.getElementsByClassName("health-player")[0].innerHTML = `Player: ${testPlayer.hp}`;
 
   if (testPlayer.hp < 1) {
     //Check if enemy is still alive
@@ -74,7 +67,8 @@ const testTurn = () => {
   }
 };
 
-// Will need to make sure the turn function only runs when a move button is pressed.
+testTurn();
+// JC: Will need to make sure the turn function only runs when a move button is pressed.
 const $moveOptions = document.querySelectorAll(".move-button");
 
-$moveOptions.addEventListener("click", testTurn());
+// $moveOptions.addEventListener("click", testTurn());
