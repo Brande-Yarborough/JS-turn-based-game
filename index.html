@@ -50,9 +50,9 @@
             </button>
             <!-- character select options: we can change these value names based on JS -->
             <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-              <li><a class="dropdown-item" value="hero-1">Warrior</a></li>
-              <li><a class="dropdown-item" value="hero-2">Rogue</a></li>
-              <li><a class="dropdown-item" value="hero-3">Mage</a></li>
+              <li><a class="dropdown-item" value="Warrior">Warrior</a></li>
+              <li><a class="dropdown-item" value="Rogue">Rogue</a></li>
+              <li><a class="dropdown-item" value="Mage">Mage</a></li>
             </ul>
           </div>
           <button class="start-btn">Start Game!</button>
@@ -76,12 +76,12 @@
                 class="pb-3 card-text player1-img-holder"
                 src="assets/heroegg.png"
               />
-              <div class="row player-assets">
-              <div class="col-md-5 description">Suspendisse ullamcorper arcu justo, sit amet.... Sed cursus ipsum et consectetur tincidunt. Donec et dui lectus.  </div>
+              <div class="row">
+              <div id="player-description" class="col-md-5 description">Suspendisse ullamcorper arcu justo, sit amet.... Sed cursus ipsum et consectetur tincidunt. Donec et dui lectus.  </div>
               <div class="col-md-6 player-moves">
-                <a href="#" class="move-button">Move 1</a>
-                <a href="#" class="move-button">Move 2</a>
-                <a href="#" class="move-button">Move 3</a>
+                <a id="move1" class="move-button">Move 1</a>
+                <a id="move2" class="move-button">Move 2</a>
+                <a id="move3" class="move-button">Move 3</a>
               </div>
               </div>
             </div>
@@ -95,13 +95,13 @@
               <div class="row">
                 <div class="col-md-6 health-player">
                   <img class="player-health-img" src="./assets/8bitheart.png">
-                  <p id="health-player">Player: 100</p>
+                  <p id="health-player">Player: HP</p>
                   
                 </div>
 
                 <div class="col-md-6 health-enemy">
                   <img class="enemy-health-img" src="./assets/8bitheart.png">
-                  <p id="health-enemy">Dinosaur:100</p> 
+                  <p id="health-monster">Enemy: HP</p> 
                 </div>
               </div>
           
@@ -113,14 +113,15 @@
           <div class="card enemy cardbody" style="width: 1fr">
             <!-- <img class="card-img-top" src="..." alt="Card image cap"> -->
             <div class="card-body">
+              <h5 id="monName" class="name"></h5>
               <!-- <h5 class="card-title">Card title</h5> -->
               <img class="pb-3 player1-img-holder" src="assets/evilegg.png" />
-              <div class="row">
-              <div class="col-md-5 description">Suspendisse ullamcorper arcu justo, sit amet.... Sed cursus ipsum et consectetur tincidunt. Donec et dui lectus.  </div>
+           <div class="row">
+              <div id="monster-description" class="col-md-5 description">Suspendisse ullamcorper arcu justo, sit amet.... Sed cursus ipsum et consectetur tincidunt. Donec et dui lectus.  </div>
                 <div class="col-md-6 monster-moves">
-                <a href="#" class="move-button">Move 1</a>
-                <a href="#" class="move-button">Move 2</a>
-                <a href="#" class="move-button">Move 3</a>
+                <a href="#" id="monMove1" class="move-button">Move 1</a>
+                <a href="#" id="monMove2" class="move-button">Move 2</a>
+                <a href="#" id="monMove3" class="move-button">Move 3</a>
               </div>
               </div>
             </div>

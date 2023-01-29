@@ -3,9 +3,9 @@ import { Move } from "./character.js";
 import { Battle } from "./battle.js";
 
 export class Game {
-  constructor({ player } = {}) {
+  constructor({ player, monster } = {}) {
     this.player = player;
-    this.monster = new Moblin();
+    this.monster = monster;
     // This battle
   }
 }
@@ -36,7 +36,6 @@ export class Rogue extends Character {
   constructor() {
     super({
       type: "Player",
-      //
       img: "rogue.jpg",
       hp: 70,
       fullHp: 70,
@@ -61,7 +60,7 @@ export class Mage extends Character {
       fullHp: 60,
     });
 
-    this.role = "Warrior";
+    this.role = "Mage";
     this.moves = [
       new Move({ name: "Swoop", dmg: 20, heal: 0 }),
       new Move({ name: "Asteroid", dmg: 45, heal: 0 }),
@@ -82,7 +81,7 @@ export class Moblin extends Character {
       fullHp: 40,
     });
 
-    this.role;
+    this.role = "Moblin";
     this.moves = [
       new Move({ name: "Swipe", dmg: 5, heal: 0 }),
       new Move({ name: "Bite", dmg: 10, heal: 0 }),
@@ -91,7 +90,7 @@ export class Moblin extends Character {
   }
 }
 
-class Mecharex extends Character {
+export class Mecharex extends Character {
   constructor() {
     super({
       type: "Monster",
@@ -100,7 +99,7 @@ class Mecharex extends Character {
       fullHp: 100,
     });
 
-    this.role;
+    this.role = "Mecha-Rex";
     this.moves = [
       new Move({ name: "Atomic Breath", dmg: 30, heal: 0 }),
       new Move({ name: "Tail Slap", dmg: 15, heal: 0 }),
@@ -109,7 +108,7 @@ class Mecharex extends Character {
   }
 }
 
-class Sabertooth extends Character {
+export class Sabertooth extends Character {
   constructor() {
     super({
       type: "Monster",
@@ -118,7 +117,7 @@ class Sabertooth extends Character {
       fullHp: 60,
     });
 
-    this.role;
+    this.role = "Sabertooth";
     this.moves = [
       new Move({ name: "Shred", dmg: 45, heal: 0 }),
       new Move({ name: "Pin", dmg: 10, heal: 0 }),
