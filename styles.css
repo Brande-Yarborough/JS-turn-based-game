@@ -15,7 +15,7 @@
 }
 
 .mid-body img {
-  max-width: 20%;
+
 }
 
 .cardbody {
@@ -110,6 +110,18 @@ footer a {
   text-align: center;
   font-style: oblique;
   font-size: 14px;
+}
+
+.player-health-img {
+    position: relative;
+    width: 40%;
+    height: 40%;
+}
+
+.player-health {
+    position: absolute;
+    font-size: 11px;
+
 }
 
 body {
