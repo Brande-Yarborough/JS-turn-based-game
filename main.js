@@ -12,7 +12,7 @@ selectPlayer.addEventListener("click", function (event) {
   console.log(name);
 });
 
-let attack = document("attack buttons");
+let attack = document.querySelector("attack buttons");
 attack.addEventListener("click", () => {
   //calls turn function from new Battle object w/value of selected attack
   Battle.turn(e.target.value);
