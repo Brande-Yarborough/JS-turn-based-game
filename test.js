@@ -31,17 +31,19 @@ const testTurn = () => {
   testPlayer.hp += testPlayer.moves[2].heal;
 
   //JC: console.log's included to make sure moves are affecting HP appropriately.
-  document.getElementById(
-    "window-text"
-  ).innerHTML = `Player Used ${testPlayer.moves[0].name}`;
+  setTimeout(() => {
+    document.getElementById(
+      "window-text"
+    ).innerHTML = `Player Used ${testPlayer.moves[0].name}`;
+  }, 2000);
 
   document.getElementById(
     "health-enemy"
-  ).innerHTML = `Enemy's HP: ${testEnemy.hp}`;
+  ).innerHTML = `Enemy's HP: ${testEnemy.hp}/${testEnemy.fullHp}`;
 
   document.getElementById(
     "health-player"
-  ).innerHTML = `Enemy's HP: ${testPlayer.hp}`;
+  ).innerHTML = `Players's HP: ${testPlayer.hp}/${testPlayer.fullHp}`;
 
   if (testEnemy.hp < 1) {
     //Check if enemy is still alive
@@ -58,10 +60,14 @@ const testTurn = () => {
   }
 
   // JC: console.log's included to make sure moves are affecting HP appropriately and that enemy's attacks are random.
-  console.log(`Enemy's Moves: ${testEnemy.moves[0].name}`);
   testPlayer.hp -= testEnemy.moves[0].dmg;
   testEnemy.hp += testEnemy.moves[0].heal;
-  console.log(`Enemy Used ${testEnemy.moves[0].name}`);
+
+  setTimeout(() => {
+    document.getElementById(
+      "window-text"
+    ).innerHTML = `Enemy Used ${testEnemy.moves[0].name}`;
+  }, 2000);
 
   // JC: Updates Player's HP Value, but also takes away heart
   // document.getElementsByClassName("health-player")[0].innerHTML = `Player: ${testPlayer.hp}`;
