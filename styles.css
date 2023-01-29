@@ -103,3 +103,9 @@ a:visited {
   object-fit: cover;
   background-image: url('./assets/Screen Shot 2023-01-28 at 3.20.26 PM.png')
 }
+
+
+/* JC: Removed sound file from flow */
+.startup-ambience{
+  display: none;
+}
