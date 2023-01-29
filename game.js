@@ -45,7 +45,7 @@ class Rogue extends Character {
     this.role = "Rogue";
     this.moves = [
       new Move({ name: "Slice", dmg: 12, heal: 0 }),
-      new Move({ name: "pounce", dmg: 25, heal: 0 }),
+      new Move({ name: "Pounce", dmg: 25, heal: 0 }),
       new Move({ name: "Rend", dmg: 15, heal: 5 }),
     ];
     // "Dream" Passive: causes bleeding;
@@ -87,6 +87,42 @@ class Moblin extends Character {
       new Move({ name: "Swipe", dmg: 5, heal: 0 }),
       new Move({ name: "Bite", dmg: 10, heal: 0 }),
       new Move({ name: "Chug", dmg: 0, heal: 10 }),
+    ];
+  }
+}
+
+class Dragonzilla extends Character {
+  constructor() {
+    super({
+      type: "Monster",
+      img: "dragonknight.jpg",
+      hp: 100,
+      fullHp: 100,
+    });
+
+    this.role;
+    this.moves = [
+      new Move({ name: "Atomic Breath", dmg: 30, heal: 0 }),
+      new Move({ name: "Tail Slap", dmg: 15, heal: 0 }),
+      new Move({ name: "Claw Smash", dmg: 10, heal: 10 }),
+    ];
+  }
+}
+
+class Demogorgon extends Character {
+  constructor() {
+    super({
+      type: "Monster",
+      img: "demogorgon.jpg",
+      hp: 60,
+      fullHp: 60,
+    });
+
+    this.role;
+    this.moves = [
+      new Move({ name: "Shred", dmg: 45, heal: 0 }),
+      new Move({ name: "Pin", dmg: 10, heal: 0 }),
+      new Move({ name: "Choke", dmg: 15, heal: 0 }),
     ];
   }
 }
