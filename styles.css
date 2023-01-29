@@ -58,13 +58,18 @@ h2 {
     margin-bottom: 40px;
     font-size: 12px;
 }
+
+.dropdown {
+    min-width: 97%;
+
+}
 .dropdown-item {
     text-align: center;
  
 }
 .dropdown-menu {
     padding: 0px;
-    min-width: 26%;
+   
     background-color: #edff79;
     border-radius: 3px;
     font-size: 12px;
