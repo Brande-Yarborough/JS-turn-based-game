@@ -15,7 +15,7 @@ import { Warrior, Rogue, Mage, Moblin } from "./game.js";
     an instance of a character and assign it as a new Mage.
     Enemy will be assigned a random Monster-type character.
 */
-const testPlayer = new Warrior();
+const testPlayer = new Rogue();
 const testEnemy = new Moblin();
 
 //  JC: Player selecting an attack will run this turn function.
@@ -27,14 +27,22 @@ const testTurn = () => {
     JC: Enemy's HP will be subtracted and reassigned by the Player's move's damage.
     If the player's move has a heal property, their HP will increase by that amount.
   */
-  testEnemy.hp -= testPlayer.moves[0].dmg;
-  testPlayer.hp += testPlayer.moves[0].heal;
+  testEnemy.hp -= testPlayer.moves[3].dmg;
+  testPlayer.hp += testPlayer.moves[3].heal;
 
   //JC: console.log's included to make sure moves are affecting HP appropriately.
   document.getElementById(
     "window-text"
   ).innerHTML = `Player Used ${testPlayer.moves[0].name}`;
-  console.log(`Enemy's HP: ${testEnemy.hp}`);
+
+  document.getElementById(
+    "health-enemy"
+  ).innerHTML = `Enemy's HP: ${testEnemy.hp}`;
+
+  document.getElementById(
+    "health-player"
+  ).innerHTML = `Enemy's HP: ${testPlayer.hp}`;
+
   if (testEnemy.hp < 1) {
     //Check if enemy is still alive
     //end game
