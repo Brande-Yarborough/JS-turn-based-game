@@ -17,7 +17,7 @@ export class Warrior extends Character {
   constructor() {
     super({
       type: "Player",
-      img: "./assets/pteradactyl.png",
+      img: "./assets/trex.png",
       hp: 100,
       fullHp: 100,
     });
@@ -57,7 +57,7 @@ export class Mage extends Character {
   constructor() {
     super({
       type: "Player",
-      img: "assets/wizarddino.png",
+      img: "./assets/dinomageasarus.png",
       hp: 60,
       fullHp: 60,
     });

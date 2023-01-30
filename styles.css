@@ -205,7 +205,13 @@ body {
   font-family: "Press Start 2P", cursive;
   color: brown;
 }
+.game-end {
+    display: none;
+}
 
+.startup-ambience {
+    display: none;
+}
 
 /* .move-button a:link,
 a:visited {
