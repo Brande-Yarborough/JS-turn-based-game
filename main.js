@@ -26,8 +26,7 @@ selectPlayer.addEventListener("click", function (event) {
   const namePrompt = prompt("Enter your name");
   const value = event.target.getAttribute("value");
   //Apply Name & Class name
-  name.innerHTML = `${namePrompt}`;
-  result.innerHTML = `${value}`;
+  name.innerHTML = `${namePrompt} - ${value}`;
   // console.log(value);
 
   //Move everything below this into StartGame button event listener
@@ -76,8 +75,12 @@ selectPlayer.addEventListener("click", function (event) {
   move2.innerHTML = `${gameTest.player.moves[1].name}`;
   move3.innerHTML = `${gameTest.player.moves[2].name}`;
   playerDesc.innerHTML = `
-  ${gameTest.player.moves[0].name}: Dmg: ${gameTest.player.moves[0].dmg} / Heal: ${gameTest.player.moves[0].heal}
+  ${gameTest.player.moves[0].name}:
+  
+  Dmg: ${gameTest.player.moves[0].dmg} / Heal: ${gameTest.player.moves[0].heal}
+
   ${gameTest.player.moves[1].name}: Dmg: ${gameTest.player.moves[1].dmg} / Heal: ${gameTest.player.moves[1].heal}
+  
   ${gameTest.player.moves[2].name}: Dmg: ${gameTest.player.moves[2].dmg} / Heal: ${gameTest.player.moves[2].heal}
   `;
   //img.src = player.img
