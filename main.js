@@ -18,9 +18,23 @@ const playerDesc = document.querySelector("#player-description");
 const monsterDesc = document.querySelector("#monster-description");
 const playerImg = document.querySelector("#player-img");
 const monsterImg = document.querySelector("#monster-img");
+const startAudio = document.querySelector(".start-btn");
+
+//event listener for start button audio
+startAudio.addEventListener("click", function () {
+  let mainAudio = new Audio("assets/startaudio.wav");
+  mainAudio.loop = true;
+  mainAudio.play();
+});
 
 const selectPlayer = document.querySelector(".dropdown-menu");
 selectPlayer.addEventListener("click", function (event) {
+
+  //added jungle forest audio 
+  let loadAudio = new Audio("assets/EAF_Tikal_Temple_Sunset_Frogs&Birds.wav");
+  loadAudio.loop = true;
+  loadAudio.play();
+
   //Player Name UI selectors
   const result = document.querySelector(".result");
   const name = document.querySelector(".name");
