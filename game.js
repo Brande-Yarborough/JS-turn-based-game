@@ -17,14 +17,16 @@ export class Warrior extends Character {
   constructor() {
     super({
       type: "Player",
-      img: "warrior.jpg",
+      img: "./assets/pteradactyl.png",
       hp: 100,
       fullHp: 100,
     });
 
     this.role = "Warrior";
     this.moves = [
-      new Move({ name: "Stomp", dmg: 10, heal: 0 }),
+      new Move({ name: "Stomp", dmg: 10, heal: 0 
+    //add audio file here
+    }),
       new Move({ name: "Crunch", dmg: 15, heal: 0 }),
       new Move({ name: "Charge", dmg: 30, heal: 0 }),
     ];
@@ -36,7 +38,7 @@ export class Rogue extends Character {
   constructor() {
     super({
       type: "Player",
-      img: "rogue.jpg",
+      img: "assets/scarydinowarrior.png",
       hp: 70,
       fullHp: 70,
     });
@@ -55,7 +57,7 @@ export class Mage extends Character {
   constructor() {
     super({
       type: "Player",
-      img: "Mage.jpg",
+      img: "assets/wizarddino.png",
       hp: 60,
       fullHp: 60,
     });
@@ -76,7 +78,7 @@ export class Moblin extends Character {
   constructor() {
     super({
       type: "Monster",
-      img: "moblin.jpg",
+      img: "assets/mechamoblin.png",
       hp: 40,
       fullHp: 40,
     });
@@ -94,7 +96,7 @@ export class Mecharex extends Character {
   constructor() {
     super({
       type: "Monster",
-      img: "mecharex.jpg",
+      img: "assets/mechatrex.png",
       hp: 100,
       fullHp: 100,
     });
@@ -112,7 +114,7 @@ export class Sabertooth extends Character {
   constructor() {
     super({
       type: "Monster",
-      img: "sabertooth.jpg",
+      img: "assets/sabertoothtiger.png",
       hp: 60,
       fullHp: 60,
     });

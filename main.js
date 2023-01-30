@@ -16,6 +16,8 @@ const monHp = document.querySelector("#health-monster");
 const infoWindow = document.querySelector("#window-text");
 const playerDesc = document.querySelector("#player-description");
 const monsterDesc = document.querySelector("#monster-description");
+const playerImg = document.querySelector("#player-img");
+const monsterImg = document.querySelector("#monster-img");
 
 const selectPlayer = document.querySelector(".dropdown-menu");
 selectPlayer.addEventListener("click", function (event) {
@@ -84,6 +86,9 @@ selectPlayer.addEventListener("click", function (event) {
   ${gameTest.player.moves[2].name}: Dmg: ${gameTest.player.moves[2].dmg} / Heal: ${gameTest.player.moves[2].heal}
   `;
   //img.src = player.img
+  playerImg.src = gameTest.player.img;
+  monsterImg.src = gameTest.monster.img;
+
   playerHp.innerHTML = `Player's HP: ${gameTest.player.hp}/${gameTest.player.fullHp}`;
   //Updating Enemy UI
   monName.innerHTML = `${gameTest.monster.role}`;
@@ -109,6 +114,8 @@ attack.forEach((attack) =>
   attack.addEventListener("click", (e) => {
     // console.log("I attacked", e.target.innerHTML, gameTest);
     //Selecting player move from move list - using innerHTML of move element to select the move
+    const moveAudio = new Audio('assets/ESM_Ambient_Game_Player_Alchemy_Potion_Failure_2_Glass_Shatter_Clink_Button_Magic.wav');
+    moveAudio.play();
     let playerMove;
     gameTest.player.moves.forEach((move) => {
       let currMove = Object.values(move);

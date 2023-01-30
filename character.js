@@ -1,8 +1,9 @@
 export class Move {
-  constructor({ name, dmg, heal } = {}) {
+  constructor({ name, dmg, heal, audio } = {}) {
     this.name = name;
     this.dmg = dmg;
     this.heal = heal;
+    this.audio = audio;
   }
 }
 
